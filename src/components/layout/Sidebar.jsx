@@ -1,3 +1,4 @@
+import { Home } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 
 const adminLinks = [
@@ -21,8 +22,11 @@ export function Sidebar({ variant }) {
   return (
     <aside className="bg-dark text-white d-flex flex-column" style={{ width: 260, minHeight: '100vh' }}>
       <div className="p-4 border-bottom border-secondary">
-        <div className="fw-semibold">{heading}</div>
-        <div className="small text-white-50">Gestión inmobiliaria</div>
+        <div className="d-flex align-items-center gap-2 fw-semibold">
+          <Home className="text-white flex-shrink-0" size={20} strokeWidth={2} aria-hidden />
+          <span>{heading}</span>
+        </div>
+        <div className="small text-white-50 mt-1">Gestión inmobiliaria</div>
       </div>
       <nav className="nav flex-column p-3 gap-1">
         {links.map(({ to, label }) => (
