@@ -1,0 +1,64 @@
+﻿/**
+ * Complemento a Bootstrap: hero con imagen, overlay y marca Inmobi.
+ * Reemplazá hero-login.jpg en src/assets/ o el import en Login.jsx.
+ */
+.login-view {
+  --inmobi-navy: #003354;
+  --inmobi-navy-hover: #004a70;
+}
+
+.login-hero-bg {
+  background-size: cover;
+  background-position: center;
+}
+
+.login-hero-overlay {
+  background: linear-gradient(to top, rgba(0, 20, 40, 0.88) 0%, rgba(0, 20, 40, 0.25) 55%, transparent 100%);
+  pointer-events: none;
+}
+
+.bg-inmobi {
+  background-color: var(--inmobi-navy) !important;
+}
+
+.text-inmobi {
+  color: var(--inmobi-navy) !important;
+}
+
+.btn-inmobi {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--inmobi-navy);
+  --bs-btn-border-color: var(--inmobi-navy);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--inmobi-navy-hover);
+  --bs-btn-hover-border-color: var(--inmobi-navy-hover);
+  --bs-btn-focus-shadow-rgb: 0, 51, 84;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--inmobi-navy-hover);
+  --bs-btn-active-border-color: var(--inmobi-navy-hover);
+}
+
+.login-hero-dots span {
+  width: 2rem;
+  height: 3px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.login-hero-dots span.is-active {
+  background: #fff;
+}
+
+.login-form-max {
+  max-width: 420px;
+}
+
+.login-view .form-check-input:checked {
+  background-color: var(--inmobi-navy);
+  border-color: var(--inmobi-navy);
+}
+
+.login-view .form-check-input:focus {
+  border-color: var(--inmobi-navy);
+  box-shadow: 0 0 0 0.2rem rgba(0, 51, 84, 0.2);
+}
