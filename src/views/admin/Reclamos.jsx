@@ -13,13 +13,18 @@ export function Reclamos() {
     <>
       <h1 className="h3 mb-3">Reclamos</h1>
       <p className="text-muted">Seguimiento de reclamos y mantenimiento.</p>
-     
-      <button className="btn btn-primary" onClick={handleShow}>
-        Nuevo reclamo
+      <div className="d-flex justify-content-end mt-3">
+      <button type="button"
+  className="btn text-white fw-semibold rounded-3 px-4 py-2 shadow-sm"
+  style={{ background: 'var(--inmobi-navy)', borderColor: 'var(--inmobi-navy)' }} onClick={handleShow}>
+       + Nuevo reclamo
         </button>
+        </div>
        <ModalReclamos show={show} onHide={handleClose}/>
        <hr />
        <ListadoReclamos />
+
+
     </>
   )
 }
